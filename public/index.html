@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Broadcaster</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="container">
+            <h1>Broadcaster</h1>
+            <div id="selectRoom">
+                <label for="name">Type your Name</label><br />
+                <input id="name" type="text" /><br />
+                <label for="roomNumber">Type the room number</label><br />
+                <input id="roomNumber" type="text" /><br />
+                <button id="joinBroadcaster" class="broadcaster">Join as Broadcaster</button>
+                <button id="joinViewer" class="viewer">Join as Viewer</button>
+            </div>
+
+        </div>
+
+        <div id="consultingRoom" style="display:none">
+            <video autoplay style="width: 100%;"></video>
+            <p id="broadcasterName"></p>
+            <ul id="viewers"></ul>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>

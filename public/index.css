@@ -1,0 +1,43 @@
+label {
+    padding: 8px;
+    font-family: Arial;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.broadcaster {
+    background-color: #008cba;
+} /* Blue */
+.viewer {
+    background-color: #e7e7e7;
+    color: black;
+} /* Gray */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 50px 29px;
+}
